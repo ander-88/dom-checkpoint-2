@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Shopping-cart</title>
+</head>
+
+<body class="" id="bd">
+    <div class="navbar">
+        <div class="logo" id="menu0" >Guitar Rock</div>
+        <div class="menu" >
+            <div><a href="#" id="menu1">Products</a></div>
+            <div><a href="#" id="menu2">Events</a></div>
+            <div><a href="#" id="menu3">VIP Mombers</a></div>
+            <div class="dark">
+                <i id="menu4" class="fa-solid fa-moon" onclick="dark()"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="title" id="menu5">Our Products</div>
+            <div class="icon-cart">
+                <i id="menu6" class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </div>
+
+        </header>
+        <div class="ListProduct">
+            <div class="item">
+                <img src="img/img1.png" alt="guitar1">
+                <h2>Accoustic Guitar</h2>
+                <div class="price">$200</div>
+                <button class="addCart">Add To Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="img/img2.png" alt="guitar2">
+                <h2>Classic electro</h2>
+                <div class="price">$500</div>
+                <button class="addCart">Add To Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="img/img3.png" alt="guitar3">
+                <h2>Rock Star</h2>
+                <div class="price">$800</div>
+                <button class="addCart">Add To Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="img/img4.png" alt="guitar4">
+                <h2>Rock Gold</h2>
+                <div class="price">$420</div>
+                <button class="addCart">Add To Cart</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="ListCart">
+            <div class="item">
+                <div class="image">
+                    <img src="./img/img1.png" alt="fff">
+                </div>
+                <div class="name">Name</div>
+                <div class="totalPrice">$200</div>
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span>1</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="close">Close</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+    <div class="give-away">
+        <h2 id="menu7">Give away Jubiläum!</h2>
+        <p id="menu8">Get the chance to win one of the guitars upthere, by entring a number if its correct, congrats!</p>
+        <div class="input-give-away">
+            <input type="password" placeholder="Enter a random Num" id="number-user">
+            <button class="give-aw-btn" onclick="giveAwayNumb()">Submit</button>
+        </div>
+
+        <p id="result"></p>
+        <div id="colorBox">
+            <h1 id="Winner"></h1>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
